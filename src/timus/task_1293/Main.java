@@ -1,4 +1,5 @@
-package timus;
+package timus.task_1293;
+
 
 import java.util.Scanner;
 
@@ -15,7 +16,7 @@ import java.util.Scanner;
 // Вам необходимо как можно скорее подсчитать, сколько всего сульфида необходимо на обработку всех панелей «Энии».
 // И не забудьте, что панели требуют обработки с обеих сторон.
 
-public class task_1293 {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
