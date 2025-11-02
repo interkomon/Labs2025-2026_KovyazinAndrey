@@ -11,7 +11,6 @@ import java.util.Scanner;
 //К сожалению, в мультфильмах не было сказано, какой вид пингвинов самый многочисленный.
 //Денис решил выяснить это: он посмотрел эти мультфильмы еще раз, и каждый раз, когда видел пингвина, записывал в блокнот название его вида.
 //Сейчас Денис дал вам блокнот с просьбой выяснить, какой вид пингвинов самый многочисленный.
-
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -39,8 +38,6 @@ public class Main {
             {
                 macpeng++;
             }
-
-
         }
         String res = "";
         if(emppeng > litpeng && emppeng > macpeng)
