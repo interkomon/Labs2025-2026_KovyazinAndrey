@@ -16,7 +16,6 @@ public class Example8 {
             encryptString = new String(arrayCharNew);
             return encryptString;
         }
-
         public static void main(String[] args) {
             Scanner in = new Scanner(System.in);
 

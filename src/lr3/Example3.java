@@ -5,17 +5,13 @@ import java.util.Scanner;
 public class Example3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
         System.out.println("Input number sequence: ");
         int num = in.nextInt();
-
         if(num <= 0)
         {
             System.out.println("Error: Number cannot be <= 0");
             return;
         }
-
-
         int a = 1;
         int b = 1;
         if (num == 1) {
@@ -31,8 +27,6 @@ public class Example3 {
 //            b = c;
 //        }
 //        System.out.println();
-
-
         int i = 1;
         while (i <= num) {
             if (i == 1) {

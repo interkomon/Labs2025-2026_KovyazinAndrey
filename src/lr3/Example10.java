@@ -14,15 +14,11 @@ public class Example10 {
             System.out.println("Error: The size must be positive");
             return;
         }
-
         int[] a = new int[num];
         Random rnd = new Random();
-
-
         for (int i = 0; i < num; i++) {
             a[i] = rnd.nextInt(100);
         }
-
 
         for (int i = 0; i < num - 1; i++) {
             int max = i;
@@ -37,8 +33,6 @@ public class Example10 {
                 a[max] = t;
             }
         }
-
-
         int i = 0;
         while (i < num) {
             System.out.print(a[i]);
@@ -46,7 +40,6 @@ public class Example10 {
             i++;
         }
         System.out.println();
-
 
         in.close();
 

@@ -1,25 +1,42 @@
 package timus.task_1014;
 
+import java.util.Arrays;
 import java.util.Scanner;
-
-//Бандиты Гарри и Ларри отдыхали на природе. Решив пострелять, они выставили на бревно несколько банок из-под пива (не больше 10).
-//Гарри начал простреливать банки по порядку, начиная с самой левой, Ларри — с самой правой.
-//В какой-то момент получилось так, что они одновременно прострелили одну и ту же последнюю банку.
-//Гарри возмутился и сказал, что Ларри должен ему кучу денег за то, что тот лишил его удовольствия прострелить несколько банок.
-//В ответ Ларри сказал, что Гарри должен ему еще больше денег по тем же причинам. Они стали спорить кто кому сколько должен,
-//но никто из них не помнил сколько банок было в начале, а искать простреленные банки по всей округе было неохота.
-//Каждый из них помнил только, сколько банок прострелил он сам.
-//Определите по этим данным, сколько банок не прострелил Гарри и сколько банок не прострелил Ларри.
 
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        long n = in.nextLong();
+        in.close();
 
-        System.out.println("Input number Garry: ");
-        int nGarry = in.nextInt();
-        System.out.println("Input number Larry: ");
-        int nLarry = in.nextInt();
+        if (n == 0) {
+            System.out.println(10);
+            return;
+        }
+        if (n >= 1 && n <= 9) {
+            System.out.println(n);
+            return;
+        }
+        int[] digits = new int[20];
+        int count = 0;
 
-        System.out.println("Numbers of cans not shot Garry and Larry: "+ (nLarry - 1) + " " + (nGarry - 1));
+        for (int d = 9; d >= 2; d--) {
+            while (n % d == 0) {
+                n /= d;
+                digits[count] = d;
+                count++;
+            }
+        }
+
+        if (n != 1) {
+            System.out.println(-1);
+            return;
+        }
+        Arrays.sort(digits, 0, count);
+        for (int i = 0; i < count; i++) {
+            System.out.print(digits[i]);
+        }
+        System.out.println();
     }
+
 }

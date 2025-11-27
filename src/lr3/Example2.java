@@ -5,10 +5,8 @@ import java.util.Scanner;
 public class Example2 {
     public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
-
     System.out.println("Input day of week: ");
     String day = in.nextLine();
-
         if (!day.equals("Monday") && !day.equals("Tuesday") && !day.equals("Wednesday")
                 && !day.equals("Thursday") && !day.equals("Friday")
                 && !day.equals("Saturday") && !day.equals("Sunday")) {
@@ -21,7 +19,6 @@ public class Example2 {
                 "Saturday\n" +
                 "Sunday");
     }
-
     switch (day) {
         case "Monday":
             System.out.println("1");
@@ -46,7 +43,6 @@ public class Example2 {
             break;
         default:
             break;
-
 
     }
 
