@@ -10,7 +10,7 @@ public class Main {
         int n = in.nextInt();
 
         int[] a = new int[n];
-        System.out.println("Введите элементы массива:");
+        System.out.println(" :");
         for (int i = 0; i < n; i++) {
             a[i] = in.nextInt();
         }
