@@ -8,9 +8,6 @@ public class SubClass2 extends SuperClass2 {
         super(t);
         number = n;
     }
-
-
-
     // без параметров
     public void setValue() {
         setText("Пусто");
@@ -21,7 +18,6 @@ public class SubClass2 extends SuperClass2 {
     public void setValue(String t) {
         setText(t);
     }
-
     // с целочисленным параметром
     public void setValue(int n) {
         number = n;
