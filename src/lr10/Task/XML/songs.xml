@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<songs>
+    <song>
+        <title>Blinding Lights</title>
+        <artist>The Weeknd</artist>
+        <year>2019</year>
+        <genre>Pop</genre>
+        <duration>3:20</duration>
+    </song>
+  <song>
+        <title>Shape of You</title>
+        <artist>Ed Sheeran</artist>
+        <year>2017</year>
+        <genre>Pop</genre>
+        <duration>3:53</duration>
+    </song>
+        
+    
+    <song>
+        <title>Numb</title>
+        <artist>Linkin Park</artist>
+        <year>2003</year>
+        <genre>Nu Metal</genre>
+        <duration>3:07</duration>
+    </song>
+    
+</songs>
